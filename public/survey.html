@@ -28,7 +28,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 2</h3>
     <h4>Generally speaking, you rely more on your experience than your imagination</h4>
@@ -38,7 +38,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 3</h3>
     <h4>You find it easy to stay relaxed and foucse even when there is some pressure.</h4>
@@ -48,7 +48,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 4</h3>
     <h4>You rarely do something just out of sheer curiosity</h4>
@@ -58,7 +58,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 5</h3>
     <h4>People can rarely upset you.</h4>
@@ -68,7 +68,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 6</h3>
     <h4>It is often difficult for you to relate to other people's feelings.</h4>
@@ -78,7 +78,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 7</h3>
     <h4>In a discussion, truth should be more important than people's sensitivities.</h4>
@@ -88,7 +88,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 8</h3>
     <h4>You rarely get carried away by fantasies and ideas.</h4>
@@ -98,7 +98,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 9</h3>
     <h4>You think that everyone's views should be respect regardless of whether they are supported by facts or not.</h4>
@@ -108,7 +108,7 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
     <h3>Question 10</h3>
     <h4>You feel more energetic after spending time with a group of people.</h4>
@@ -118,8 +118,9 @@
         <option value="2" >2</option>
         <option value="3" >2</option>
         <option value="4" >2</option>
-        <option value="5" >5 (Strongly Aagree)</option>
+        <option value="5" >5 (Strongly Agree)</option>
     </select>
+    <br>
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
         <i class="fa fa-check-circle" aria-hidden = "true"></i> Submit
     </button>
@@ -129,7 +130,20 @@
     <a href="https://github.com/rbenjamin19/friendFinder">Github Repo</a>
 
   </div>
+<script>
 
+var currentURL = window.location.origin;
+
+$("#submit").on("click", function(){
+        var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(),
+             $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]    
+};
+)};
+
+</script>
   
 </body>
 </html>
